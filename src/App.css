@@ -1,0 +1,42 @@
+
+.App{
+  height: 100vh;
+  display: grid;
+  background-image: url(./assets/shapes-background.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 80vw;
+}
+
+header{
+  position: relative;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: none;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 144px;
+  line-height: 38px;
+  /* or 27% */
+  align-items: center;
+  color: #C85151;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p.sub{
+  position: relative;
+  top: -130px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: SF Pro Display;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+
+  color: #C85151;
+}
+
