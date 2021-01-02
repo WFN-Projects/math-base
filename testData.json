@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Cube",
+        "ascii": "V=s^3"
+    },
+    {
+        "name": "Parallelepiped",
+        "ascii": "V=lxxwxxh"
+    },
+    {
+        "name": "Regular prism",
+        "ascii": "V=bxxh"
+    },
+    {
+        "name": "Cylinder",
+        "ascii": "V=pir^2xxh"
+    },
+    {
+        "name": "Cone (or pyramid)",
+        "ascii": "V=1/3bxxh"
+    },
+    {
+        "name": "Sphere",
+        "ascii": "V=4/3pir^3"
+    }
+]
