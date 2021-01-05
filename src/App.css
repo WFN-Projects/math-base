@@ -45,6 +45,9 @@ p.sub{
   color: #C85151;
 }
 
+p.searchResults{
+  text-align: center;
+}
 
 
 .container {
@@ -62,7 +65,7 @@ p.sub{
 }
 
 .search-panel__results {
-  flex: 3;
+  flex: 2;
 }
 
 .searchbox {
