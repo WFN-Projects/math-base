@@ -1,11 +1,16 @@
+em {
+  background: cyan;
+  font-style: normal;
+}
+
 
 .App{
   height: 100vh;
   display: grid;
-  background-image: url(./assets/shapes-background.jpg);
+  background-image: url(./assets/shapes-background.svg);
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: 80vw;
+  background-size: 95vw;
 }
 
 header{
@@ -27,7 +32,7 @@ header{
 
 p.sub{
   position: relative;
-  top: -130px;
+  top: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -40,3 +45,31 @@ p.sub{
   color: #C85151;
 }
 
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.search-panel {
+  display: flex;
+}
+
+.search-panel__filters {
+  flex: 1;
+}
+
+.search-panel__results {
+  flex: 3;
+}
+
+.searchbox {
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  margin: 2rem auto;
+  text-align: center;
+}
