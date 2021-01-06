@@ -1,15 +1,17 @@
 import { connectSearchBox } from 'react-instantsearch-dom';
-import React, { Component } from 'react';
+import React from 'react';
 
 const SearchBox = ({ currentRefinement, isSearchStalled, refine }) => (
-  <form noValidate action="" role="search">
+  <React.Fragment>
+    <i class="fas fa-search"></i>
     <input
-      type="search"
+      width="60vw"
+      class="search"
       value={currentRefinement}
       onChange={event => refine(event.currentTarget.value)}
+      placeholder="Enter a formula name..."
     />
-    <button onClick={() => refine('')}>Reset query</button>
-  </form>
+    </React.Fragment>
 );
 
 const CustomSearchBox = connectSearchBox(SearchBox);

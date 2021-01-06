@@ -2,24 +2,22 @@ import React, { Component } from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import {
   InstantSearch,
-  Hits,
-  SearchBox,
-  Highlight,
 } from 'react-instantsearch-dom';
-import PropTypes from 'prop-types';
 import './App.css';
 import CustomHits from './components/CustomHits';
 import CustomSearchBox from './components/CustomSearchBox';
 import Paper from "@material-ui/core/Paper";
-import Box from "@material-ui/core/Box";
+import { library } from '@fortawesome/fontawesome-svg-core'
 
+//actual search client
 const algoliaClient = algoliasearch(
   '1QZ1KS7XU1',
   '64c5bbe394f75e33424ac7026a9a5621'
 );
+//proxy search client
 const searchClient = {
   async search(requests) {
-    // change conditional if any of the other facets are faked"
+    // change conditional if any of the other facets are faked
     if (requests.every(({ params: { query } }) => Boolean(query) === false)) {
       return {
         results: requests.map(params => {
@@ -48,7 +46,7 @@ class App extends Component {
         <header>Math Base</header>
         <p class="sub">A motto will go here one day...</p>
         <div className="container">
-          <Paper >
+          <Paper>
             <InstantSearch searchClient={searchClient} indexName="FINAL_FORMULAS">
               <div className="search-panel">
                 <div className="search-panel__results">
@@ -57,7 +55,7 @@ class App extends Component {
                 </div>
               </div>
             </InstantSearch>
-            </Paper>
+          </Paper>
         </div>
       </div>
     );
