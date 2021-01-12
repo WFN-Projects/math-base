@@ -5,7 +5,7 @@ import {
 } from 'react-instantsearch-dom';
 import './App.css';
 import CustomHits from './components/CustomHits';
-import CustomSearchBox from './components/CustomSearchBox';
+import SearchBox from './components/CustomSearchBox';
 import Paper from "@material-ui/core/Paper";
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -43,14 +43,18 @@ class App extends Component {
     
     return (
       <div className="App">
-        <header>Math Base</header>
-        <p class="sub">A motto will go here one day...</p>
+        <div className="Title">
+          <h1>Math Base</h1>
+        </div>
+        <div className="Motto">
+          <p class="sub">A motto will go here one day...</p>
+        </div>
         <div className="container">
           <Paper>
             <InstantSearch searchClient={searchClient} indexName="FINAL_FORMULAS">
               <div className="search-panel">
                 <div className="search-panel__results">
-                  <CustomSearchBox/>
+                  <SearchBox/>
                   <CustomHits/>
                 </div>
               </div>

@@ -10,43 +10,53 @@ input.search{
 /* Entire app */
 .App{
   height: 100vh;
-  display: grid;
+  position: relative;
   background-image: url(./assets/shapes-background.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 95vw;
 }
 
-/* Math Base text */
-header{
+.Title{
+  min-height: 152px;
   position: relative;
-  margin-top: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: none;
+  height: 30vh;
+  display: block;
+  text-align: center;
+}
+
+.Motto{
+  min-height: 36px;
+  position: relative;
+  height: 5vh;
+  display: block;
+  text-align: center;
+}
+
+/* Math Base text */
+h1{
+  position: absolute;
+  bottom: 0;
+  left: 50vw;
+  margin-left: -329.13px;
   font-family: SF Pro Display;
   font-style: normal;
-  font-weight: 500;
-  font-size: 144px;
-  line-height: 38px;
-  /* or 27% */
-  align-items: center;
+  font-weight: 500 !important;
+  font-size: 144px !important;
   color: #C85151;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Motto */
 p.sub{
-  position: relative;
-  top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
+  position: absolute;
+  bottom: 0;
+  left: 50vw;
+  margin-left: -162.1px;
   font-family: SF Pro Display;
   font-style: italic;
   font-weight: 500;
   font-size: 24px;
-  line-height: 38px;
 
   color: #C85151;
 }

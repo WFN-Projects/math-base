@@ -4,7 +4,7 @@ import React from 'react';
 
 const Hits = ({ hits }) => (
     <React.Fragment>
-        <table className="table" width="40vw" min-width="500px" cellspacing="0" cellpadding="0">
+        <table className="table">
             <tbody>
                 {hits.map(hit => (
                     <tr key={hit.objectID}>
