@@ -1,6 +1,7 @@
 /* All text will be this font */
 *{
-  font: SF Pro Display !important;
+  font-family: "San Francisco" !important;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff") !important;
 }
 
 input.search{
