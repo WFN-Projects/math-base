@@ -8,8 +8,6 @@ import CustomHits from './components/CustomHits';
 import SearchBox from './components/CustomSearchBox';
 import Paper from "@material-ui/core/Paper";
 import { library } from '@fortawesome/fontawesome-svg-core';
-import 'katex/dist/katex.min.css';
-import { InlineMath, BlockMath } from 'react-katex';
 
 //actual search client
 const algoliaClient = algoliasearch(
