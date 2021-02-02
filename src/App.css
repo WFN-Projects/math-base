@@ -1,12 +1,17 @@
 /* All text will be this font */
 @font-face{
-  font-family: "San Francisco", "sans-serif";
+  font-family: "SanFrancisco";
   src: url(./assets/SF-Pro-Display-Regular.otf);
 }
 
-*{
-  font-family: "San Francisco", "sans-serif";
+@font-face{
+  font-family: "SanFranciso-Italic";
+  src: url(./assets/SF-Pro-Display-RegularItalic.otf);
 }
+
+/* *{
+  font-family: "San Francisco", "sans-serif";
+} */
 
 input.search{
   border: 0;
@@ -44,7 +49,7 @@ h1{
   bottom: 0;
   left: 50vw;
   margin-left: -329.13px;
-  font-family: SF Pro Display;
+  font-family: "SanFrancisco", "Arial", "sans-serif";
   font-style: normal;
   font-weight: 500 !important;
   font-size: 144px !important;
@@ -58,7 +63,7 @@ p.sub{
   bottom: 0;
   left: 50vw;
   margin-left: -162.1px;
-  font-family: SF Pro Display;
+  font-family: "SanFrancisco-Italic", "Arial", "sans-serif";
   font-style: italic;
   font-weight: 500;
   font-size: 24px;
