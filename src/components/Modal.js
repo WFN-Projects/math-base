@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components";
 import HamburgerMenu from "react-hamburger-menu"
-// import Profile from "./ProfilePic"
-// import Img from "gatsby-image"
 import gsap from "gsap"
 
 class Modal extends React.Component {
@@ -72,22 +70,10 @@ class Modal extends React.Component {
             </Arrow>
           }
           <ModalTitleWrapper>
-            {/* <SmallMarble fixed={this.props.marble} draggable={false}/> */}
             <ModalTitle>{this.props.name}</ModalTitle>
           </ModalTitleWrapper>
           <ModalContent id={`${this.props.id}_modalContent`}>
             {this.props.children}
-            {/* <ProfilesWrapper>
-              {this.props.teamMembers.edges.map(image => (
-                <ProfileBox>
-                  <Profile
-                    image={image.node.childImageSharp.fixed}
-                    name={image.node.base.replace(/\.[^/.]+$/, "").split("_")[1]}
-                    position={image.node.base.replace(/\.[^/.]+$/, "").split("_")[2]}
-                  />
-                </ProfileBox>
-              ))}
-            </ProfilesWrapper> */}
           </ModalContent>
         </ModalContentWrapper>
       </ModalWrapper>
@@ -150,11 +136,6 @@ const ModalTitle = styled.p`
   display: inline-block;
 `;
 
-// const SmallMarble = styled(Img)`
-//   width: 40px !important;
-//   height: 40px !important;
-// `;
-
 const ModalTitleWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -162,24 +143,6 @@ const ModalTitleWrapper = styled.div`
 
 const ModalContent = styled.div`
   font-size: larger;
-`;
-
-const ProfilesWrapper = styled.div`
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  overflow: scroll;
-  width: 100%;
-  margin-top: 2vh;
-
-  p {
-    font-size: medium;
-  }
-`;
-
-const ProfileBox = styled.div`
-  width: 25%;
-  min-width: 130px;
 `;
 
 const Arrow = styled.div`
