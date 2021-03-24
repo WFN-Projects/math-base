@@ -93,3 +93,16 @@ table{
   display: flex;
 }
 
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #C85151;
+}
+
+.info > a {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: large;
+  cursor: pointer;
+}
